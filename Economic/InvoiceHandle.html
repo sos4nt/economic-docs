@@ -1,0 +1,5478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Economic::InvoiceHandle
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!Economic/InvoiceHandle.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (I)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Economic.html" title="Economic (module)">Economic</a></span></span>
+     &raquo; 
+    <span class="title">InvoiceHandle</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Economic::InvoiceHandle
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Handle</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Handle</li>
+          
+            <li class="next">Economic::InvoiceHandle</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">handles/invoice_handle.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>This file was generated automatically from the WSDL description.</p>
+
+<p>WSDL: <a
+href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?wsdl">api.e-conomic.com/secure/api1/EconomicWebService.asmx?wsdl</a></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Version:</p>
+<ul class="version">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.4.13</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#number-instance_method" title="#number (instance method)">- (Integer) <strong>number</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_by_date_interval-class_method" title="find_by_date_interval (class method)">+ (Array&lt;InvoiceHandle&gt;) <strong>find_by_date_interval</strong>(first, last) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns handles for invoices in a given interval of days.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_by_number-class_method" title="find_by_number (class method)">+ (InvoiceHandle) <strong>find_by_number</strong>(number) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a handle for the invoice with the given number.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_by_number_interval-class_method" title="find_by_number_interval (class method)">+ (Array&lt;InvoiceHandle&gt;) <strong>find_by_number_interval</strong>(min_number, max_number) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns an array with handles for the invoices with invoice numbers in the
+given interval.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_by_number_list-class_method" title="find_by_number_list (class method)">+ (Array&lt;InvoiceHandle&gt;) <strong>find_by_number_list</strong>(numbers) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns an array with handles for the invoices corresponding to the given
+invoice numbers.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_by_order_number-class_method" title="find_by_order_number (class method)">+ (Array&lt;InvoiceHandle&gt;) <strong>find_by_order_number</strong>(order_number) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns handles for the invoices with a given order number.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_by_other_reference-class_method" title="find_by_other_reference (class method)">+ (Array&lt;InvoiceHandle&gt;) <strong>find_by_other_reference</strong>(other_reference) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns handles for the invoices with a given other reference.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_by_our_reference-class_method" title="find_by_our_reference (class method)">+ (Array&lt;InvoiceHandle&gt;) <strong>find_by_our_reference</strong>(our_reference_handle) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns handles for invoices which have the given employee as OurReference.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_all-class_method" title="get_all (class method)">+ (Array&lt;InvoiceHandle&gt;) <strong>get_all</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns handles for all invoices.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_data_array-class_method" title="get_data_array (class method)">+ (Array&lt;InvoiceData&gt;) <strong>get_data_array</strong>(entity_handles) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns invoice data objects for a given set of invoice handles.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_attention-instance_method" title="#get_attention (instance method)">- (DebtorContactHandle) <strong>get_attention</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets a handle for the attention of an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_currency-instance_method" title="#get_currency (instance method)">- (CurrencyHandle) <strong>get_currency</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets a handle for the currency of an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_data-instance_method" title="#get_data (instance method)">- (InvoiceData) <strong>get_data</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns an invoice data object for a given invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_date-instance_method" title="#get_date (instance method)">- (DateTime) <strong>get_date</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the date of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_debtor-instance_method" title="#get_debtor (instance method)">- (DebtorHandle) <strong>get_debtor</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets a handle for the debtor for an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_debtor_address-instance_method" title="#get_debtor_address (instance method)">- (String) <strong>get_debtor_address</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the debtor address for an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_debtor_city-instance_method" title="#get_debtor_city (instance method)">- (String) <strong>get_debtor_city</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the debtor city for an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_debtor_country-instance_method" title="#get_debtor_country (instance method)">- (String) <strong>get_debtor_country</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the debtor country for an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_debtor_county-instance_method" title="#get_debtor_county (instance method)">- (String) <strong>get_debtor_county</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the DebtorCounty of an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_debtor_ean-instance_method" title="#get_debtor_ean (instance method)">- (String) <strong>get_debtor_ean</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the debtor EAN for an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_debtor_name-instance_method" title="#get_debtor_name (instance method)">- (String) <strong>get_debtor_name</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the name for an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_debtor_postal_code-instance_method" title="#get_debtor_postal_code (instance method)">- (String) <strong>get_debtor_postal_code</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the debtor postal code for an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_deduction_amount-instance_method" title="#get_deduction_amount (instance method)">- (BigDecimal) <strong>get_deduction_amount</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the deduction amount of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_delivery_address-instance_method" title="#get_delivery_address (instance method)">- (String) <strong>get_delivery_address</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the delivery address of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_delivery_city-instance_method" title="#get_delivery_city (instance method)">- (String) <strong>get_delivery_city</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the delivery city of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_delivery_country-instance_method" title="#get_delivery_country (instance method)">- (String) <strong>get_delivery_country</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the delivery country of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_delivery_county-instance_method" title="#get_delivery_county (instance method)">- (String) <strong>get_delivery_county</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the DeliveryCounty of an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_delivery_date-instance_method" title="#get_delivery_date (instance method)">- (DateTime) <strong>get_delivery_date</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the delivery date of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_delivery_location-instance_method" title="#get_delivery_location (instance method)">- (DeliveryLocationHandle) <strong>get_delivery_location</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets a handle for the delivery location of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_delivery_postal_code-instance_method" title="#get_delivery_postal_code (instance method)">- (String) <strong>get_delivery_postal_code</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the delivery postal code of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_due_date-instance_method" title="#get_due_date (instance method)">- (DateTime) <strong>get_due_date</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the due date of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_gross_amount-instance_method" title="#get_gross_amount (instance method)">- (BigDecimal) <strong>get_gross_amount</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the total gross amount for all lines of the invoice (in the currency
+of the invoice).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_heading-instance_method" title="#get_heading (instance method)">- (String) <strong>get_heading</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the heading of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_is_vat_included-instance_method" title="#get_is_vat_included (instance method)">- (true, false) <strong>get_is_vat_included</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets whether the invoice has VAT included.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_layout-instance_method" title="#get_layout (instance method)">- (TemplateCollectionHandle) <strong>get_layout</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets a handle for the layout of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_lines-instance_method" title="#get_lines (instance method)">- (Array&lt;InvoiceLineHandle&gt;) <strong>get_lines</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets handles for the lines of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_net_amount-instance_method" title="#get_net_amount (instance method)">- (BigDecimal) <strong>get_net_amount</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the total amount for all lines without VAT of the invoice (in the
+currency of the invoice).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_net_amount_default_currency-instance_method" title="#get_net_amount_default_currency (instance method)">- (BigDecimal) <strong>get_net_amount_default_currency</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_number-instance_method" title="#get_number (instance method)">- (Integer) <strong>get_number</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the number of an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_oio_xml-instance_method" title="#get_oio_xml (instance method)">- (String) <strong>get_oio_xml</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets an OIO XML string representing an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_order_number-instance_method" title="#get_order_number (instance method)">- (Integer) <strong>get_order_number</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the order number of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_other_reference-instance_method" title="#get_other_reference (instance method)">- (String) <strong>get_other_reference</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the other reference of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_our_reference-instance_method" title="#get_our_reference (instance method)">- (EmployeeHandle) <strong>get_our_reference</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets a handle for the primary reference of the creditor of an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_our_reference2-instance_method" title="#get_our_reference2 (instance method)">- (EmployeeHandle) <strong>get_our_reference2</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets a handle for the secodary reference of the creditor of an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_pdf-instance_method" title="#get_pdf (instance method)">- (base64Binary) <strong>get_pdf</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets an invoice as a PDF-file.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_project-instance_method" title="#get_project (instance method)">- (ProjectHandle) <strong>get_project</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets a handle for the project for an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_public_entry_number-instance_method" title="#get_public_entry_number (instance method)">- (String) <strong>get_public_entry_number</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the public entry number an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_remainder-instance_method" title="#get_remainder (instance method)">- (BigDecimal) <strong>get_remainder</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the remainder of the invoice (in the currency of the invoice).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_remainder_default_currency-instance_method" title="#get_remainder_default_currency (instance method)">- (BigDecimal) <strong>get_remainder_default_currency</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the remainder of the invoice (in the default currency).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_rounding_amount-instance_method" title="#get_rounding_amount (instance method)">- (BigDecimal) <strong>get_rounding_amount</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the rounding amount for all lines of the invoice (in the currency of
+the invoice).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_term_of_payment-instance_method" title="#get_term_of_payment (instance method)">- (TermOfPaymentHandle) <strong>get_term_of_payment</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets a handle for the term of payment of an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_terms_of_delivery-instance_method" title="#get_terms_of_delivery (instance method)">- (String) <strong>get_terms_of_delivery</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the terms of delivery of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_text_line1-instance_method" title="#get_text_line1 (instance method)">- (String) <strong>get_text_line1</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the primary line of text of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_text_line2-instance_method" title="#get_text_line2 (instance method)">- (String) <strong>get_text_line2</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the secondary line of text of the invoice.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_vat_amount-instance_method" title="#get_vat_amount (instance method)">- (BigDecimal) <strong>get_vat_amount</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the total VAT amount for all lines of the invoice (in the currency of
+the invoice).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_your_reference-instance_method" title="#get_your_reference (instance method)">- (DebtorContactHandle) <strong>get_your_reference</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets a handle for the reference of the debtor of an invoice.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="number=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="number-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>number</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+10</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 10</span>
+
+<span class='id identifier rubyid_api_attribute'>api_attribute</span> <span class='symbol'>:number</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:int</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="find_by_date_interval-class_method">
+  
+    + (<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>) <strong>find_by_date_interval</strong>(first, last) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns handles for invoices in a given interval of days. Parameters:
+first: First day in interval. last: Last day in interval.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>first</span>
+      
+      
+        <span class='type'>(<tt>DateTime</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>last</span>
+      
+      
+        <span class='type'>(<tt>DateTime</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByDateInterval" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByDateInterval">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByDateInterval</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+250
+251
+252
+253
+254
+255
+256</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 250</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_find_by_date_interval'>find_by_date_interval</span><span class='lparen'>(</span><span class='id identifier rubyid_first'>first</span><span class='comma'>,</span> <span class='id identifier rubyid_last'>last</span><span class='rparen'>)</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_find_by_date_interval</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:first</span><span class='comma'>,</span> <span class='id identifier rubyid_first'>first</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:date_time</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:last</span><span class='comma'>,</span> <span class='id identifier rubyid_last'>last</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:date_time</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="find_by_number-class_method">
+  
+    + (<tt><span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span></tt>) <strong>find_by_number</strong>(number) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a handle for the invoice with the given number. Parameters: number:
+The number to search for.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>number</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByNumber" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByNumber">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByNumber</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+211
+212
+213
+214
+215
+216</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 211</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_find_by_number'>find_by_number</span><span class='lparen'>(</span><span class='id identifier rubyid_number'>number</span><span class='rparen'>)</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_find_by_number</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:number</span><span class='comma'>,</span> <span class='id identifier rubyid_number'>number</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:int</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:invoice_handle</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="find_by_number_interval-class_method">
+  
+    + (<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>) <strong>find_by_number_interval</strong>(min_number, max_number) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns an array with handles for the invoices with invoice numbers in the
+given interval. Parameters: minNumber: The start of the interval.
+maxNumber: The end of the interval.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>min_number</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>max_number</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByNumberInterval" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByNumberInterval">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByNumberInterval</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+236
+237
+238
+239
+240
+241
+242</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 236</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_find_by_number_interval'>find_by_number_interval</span><span class='lparen'>(</span><span class='id identifier rubyid_min_number'>min_number</span><span class='comma'>,</span> <span class='id identifier rubyid_max_number'>max_number</span><span class='rparen'>)</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_find_by_number_interval</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:min_number</span><span class='comma'>,</span> <span class='id identifier rubyid_min_number'>min_number</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:int</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:max_number</span><span class='comma'>,</span> <span class='id identifier rubyid_max_number'>max_number</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:int</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="find_by_number_list-class_method">
+  
+    + (<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>) <strong>find_by_number_list</strong>(numbers) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns an array with handles for the invoices corresponding to the given
+invoice numbers. If a invoice with a given number does not exist then the
+array contains nothing at that index. Parameters: numbers: The numbers to
+search for.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>numbers</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;Int&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByNumberList" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByNumberList">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByNumberList</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+223
+224
+225
+226
+227
+228</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 223</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_find_by_number_list'>find_by_number_list</span><span class='lparen'>(</span><span class='id identifier rubyid_numbers'>numbers</span><span class='rparen'>)</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_find_by_number_list</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:numbers</span><span class='comma'>,</span> <span class='id identifier rubyid_numbers'>numbers</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:int</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="find_by_order_number-class_method">
+  
+    + (<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>) <strong>find_by_order_number</strong>(order_number) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns handles for the invoices with a given order number. Parameters:
+orderNumber: The number to search for.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>order_number</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByOrderNumber" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByOrderNumber">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByOrderNumber</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+287
+288
+289
+290
+291
+292</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 287</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_find_by_order_number'>find_by_order_number</span><span class='lparen'>(</span><span class='id identifier rubyid_order_number'>order_number</span><span class='rparen'>)</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_find_by_order_number</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:order_number</span><span class='comma'>,</span> <span class='id identifier rubyid_order_number'>order_number</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:int</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="find_by_other_reference-class_method">
+  
+    + (<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>) <strong>find_by_other_reference</strong>(other_reference) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns handles for the invoices with a given other reference. Parameters:
+otherReference: The other reference to search for.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>other_reference</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByOtherReference" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByOtherReference">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByOtherReference</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+275
+276
+277
+278
+279
+280</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 275</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_find_by_other_reference'>find_by_other_reference</span><span class='lparen'>(</span><span class='id identifier rubyid_other_reference'>other_reference</span><span class='rparen'>)</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_find_by_other_reference</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:other_reference</span><span class='comma'>,</span> <span class='id identifier rubyid_other_reference'>other_reference</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:string</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="find_by_our_reference-class_method">
+  
+    + (<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>) <strong>find_by_our_reference</strong>(our_reference_handle) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns handles for invoices which have the given employee as OurReference.
+Parameters: ourReferenceHandle: The employee to search for.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>our_reference_handle</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="EmployeeHandle.html" title="Economic::EmployeeHandle (class)">EmployeeHandle</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByOurReference" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByOurReference">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_FindByOurReference</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+263
+264
+265
+266
+267
+268</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 263</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_find_by_our_reference'>find_by_our_reference</span><span class='lparen'>(</span><span class='id identifier rubyid_our_reference_handle'>our_reference_handle</span><span class='rparen'>)</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_find_by_our_reference</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:our_reference_handle</span><span class='comma'>,</span> <span class='id identifier rubyid_our_reference_handle'>our_reference_handle</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:employee_handle</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_all-class_method">
+  
+    + (<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>) <strong>get_all</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns handles for all invoices.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetAll" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetAll">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetAll</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+200
+201
+202
+203
+204</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 200</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get_all'>get_all</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_all</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_data_array-class_method">
+  
+    + (<tt>Array&lt;<span class='object_link'><a href="InvoiceData.html" title="Economic::InvoiceData (class)">InvoiceData</a></span>&gt;</tt>) <strong>get_data_array</strong>(entity_handles) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns invoice data objects for a given set of invoice handles.
+Parameters: entityHandles: An array of the invoice handles.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>entity_handles</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="Economic::InvoiceHandle (class)">InvoiceHandle</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="InvoiceData.html" title="Economic::InvoiceData (class)">InvoiceData</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDataArray" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDataArray">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDataArray</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+343
+344
+345
+346
+347
+348</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 343</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get_data_array'>get_data_array</span><span class='lparen'>(</span><span class='id identifier rubyid_entity_handles'>entity_handles</span><span class='rparen'>)</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_data_array</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:entity_handles</span><span class='comma'>,</span> <span class='id identifier rubyid_entity_handles'>entity_handles</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:invoice_data</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="get_attention-instance_method">
+  
+    - (<tt><span class='object_link'><a href="DebtorContactHandle.html" title="Economic::DebtorContactHandle (class)">DebtorContactHandle</a></span></tt>) <strong>get_attention</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets a handle for the attention of an invoice. Parameters: invoiceHandle:
+Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="DebtorContactHandle.html" title="Economic::DebtorContactHandle (class)">DebtorContactHandle</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetAttention" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetAttention">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetAttention</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+464
+465
+466
+467
+468
+469</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 464</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_attention'>get_attention</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_attention</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:debtor_contact_handle</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_currency-instance_method">
+  
+    - (<tt><span class='object_link'><a href="CurrencyHandle.html" title="Economic::CurrencyHandle (class)">CurrencyHandle</a></span></tt>) <strong>get_currency</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets a handle for the currency of an invoice. Parameters: invoiceHandle:
+Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="CurrencyHandle.html" title="Economic::CurrencyHandle (class)">CurrencyHandle</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetCurrency" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetCurrency">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetCurrency</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+519
+520
+521
+522
+523
+524</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 519</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_currency'>get_currency</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_currency</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:currency_handle</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_data-instance_method">
+  
+    - (<tt><span class='object_link'><a href="InvoiceData.html" title="Economic::InvoiceData (class)">InvoiceData</a></span></tt>) <strong>get_data</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns an invoice data object for a given invoice. Parameters:
+entityHandle: A handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="InvoiceData.html" title="Economic::InvoiceData (class)">InvoiceData</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetData" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetData">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetData</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+331
+332
+333
+334
+335
+336</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 331</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_data'>get_data</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_data</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:entity_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:invoice_data</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_date-instance_method">
+  
+    - (<tt>DateTime</tt>) <strong>get_date</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the date of the invoice. Parameters: invoiceHandle: Handle for the
+invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>DateTime</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDate" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDate">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDate</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+16
+17
+18
+19
+20
+21</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 16</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_date'>get_date</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_date</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:date_time</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_debtor-instance_method">
+  
+    - (<tt><span class='object_link'><a href="DebtorHandle.html" title="Economic::DebtorHandle (class)">DebtorHandle</a></span></tt>) <strong>get_debtor</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets a handle for the debtor for an invoice. Parameters: invoiceHandle:
+Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="DebtorHandle.html" title="Economic::DebtorHandle (class)">DebtorHandle</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtor" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtor">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtor</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+365
+366
+367
+368
+369
+370</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 365</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_debtor'>get_debtor</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_debtor</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:debtor_handle</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_debtor_address-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_debtor_address</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the debtor address for an invoice. Parameters: invoiceHandle: Handle
+for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorAddress" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorAddress">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorAddress</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+398
+399
+400
+401
+402
+403</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 398</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_debtor_address'>get_debtor_address</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_debtor_address</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_debtor_city-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_debtor_city</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the debtor city for an invoice. Parameters: invoiceHandle: Handle for
+the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorCity" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorCity">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorCity</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+420
+421
+422
+423
+424
+425</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 420</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_debtor_city'>get_debtor_city</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_debtor_city</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_debtor_country-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_debtor_country</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the debtor country for an invoice. Parameters: invoiceHandle: Handle
+for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorCountry" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorCountry">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorCountry</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+431
+432
+433
+434
+435
+436</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 431</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_debtor_country'>get_debtor_country</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_debtor_country</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_debtor_county-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_debtor_county</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the DebtorCounty of an invoice. (UK only) Parameters: InvoiceHandle:
+Handle for the Invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorCounty" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorCounty">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorCounty</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+159
+160
+161
+162
+163
+164</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 159</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_debtor_county'>get_debtor_county</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_debtor_county</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_debtor_ean-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_debtor_ean</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the debtor EAN for an invoice. Parameters: invoiceHandle: Handle for
+the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorEan" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorEan">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorEan</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+442
+443
+444
+445
+446
+447</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 442</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_debtor_ean'>get_debtor_ean</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_debtor_ean</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_debtor_name-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_debtor_name</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the name for an invoice. Parameters: invoiceHandle: Handle for the
+invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorName" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorName">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorName</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+387
+388
+389
+390
+391
+392</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 387</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_debtor_name'>get_debtor_name</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_debtor_name</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_debtor_postal_code-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_debtor_postal_code</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the debtor postal code for an invoice. Parameters: invoiceHandle:
+Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorPostalCode" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorPostalCode">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDebtorPostalCode</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+409
+410
+411
+412
+413
+414</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 409</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_debtor_postal_code'>get_debtor_postal_code</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_debtor_postal_code</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_deduction_amount-instance_method">
+  
+    - (<tt>BigDecimal</tt>) <strong>get_deduction_amount</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the deduction amount of the invoice. Parameters: invoiceHandle: Handle
+for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>BigDecimal</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeductionAmount" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeductionAmount">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeductionAmount</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+190
+191
+192
+193
+194
+195</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 190</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_deduction_amount'>get_deduction_amount</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_deduction_amount</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:decimal</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_delivery_address-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_delivery_address</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the delivery address of the invoice. Parameters: invoiceHandle: Handle
+for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryAddress" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryAddress">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryAddress</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+563
+564
+565
+566
+567
+568</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 563</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_delivery_address'>get_delivery_address</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_delivery_address</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_delivery_city-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_delivery_city</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the delivery city of the invoice. Parameters: invoiceHandle: Handle
+for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryCity" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryCity">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryCity</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+585
+586
+587
+588
+589
+590</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 585</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_delivery_city'>get_delivery_city</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_delivery_city</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_delivery_country-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_delivery_country</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the delivery country of the invoice. Parameters: invoiceHandle: Handle
+for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryCountry" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryCountry">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryCountry</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+596
+597
+598
+599
+600
+601</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 596</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_delivery_country'>get_delivery_country</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_delivery_country</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_delivery_county-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_delivery_county</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the DeliveryCounty of an invoice. (UK only) Parameters: InvoiceHandle:
+Handle for the Invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryCounty" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryCounty">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryCounty</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+170
+171
+172
+173
+174
+175</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 170</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_delivery_county'>get_delivery_county</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_delivery_county</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_delivery_date-instance_method">
+  
+    - (<tt>DateTime</tt>) <strong>get_delivery_date</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the delivery date of the invoice. Parameters: invoiceHandle: Handle
+for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>DateTime</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryDate" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryDate">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryDate</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+618
+619
+620
+621
+622
+623</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 618</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_delivery_date'>get_delivery_date</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_delivery_date</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:date_time</span><span class='comma'>,</span> <span class='label'>nillable:</span> <span class='kw'>true</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_delivery_location-instance_method">
+  
+    - (<tt><span class='object_link'><a href="DeliveryLocationHandle.html" title="Economic::DeliveryLocationHandle (class)">DeliveryLocationHandle</a></span></tt>) <strong>get_delivery_location</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets a handle for the delivery location of the invoice. Parameters:
+invoiceHandle: Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="DeliveryLocationHandle.html" title="Economic::DeliveryLocationHandle (class)">DeliveryLocationHandle</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryLocation" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryLocation">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryLocation</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+552
+553
+554
+555
+556
+557</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 552</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_delivery_location'>get_delivery_location</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_delivery_location</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:delivery_location_handle</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_delivery_postal_code-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_delivery_postal_code</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the delivery postal code of the invoice. Parameters: invoiceHandle:
+Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryPostalCode" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryPostalCode">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDeliveryPostalCode</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+574
+575
+576
+577
+578
+579</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 574</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_delivery_postal_code'>get_delivery_postal_code</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_delivery_postal_code</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_due_date-instance_method">
+  
+    - (<tt>DateTime</tt>) <strong>get_due_date</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the due date of the invoice. Parameters: invoiceHandle: Handle for the
+invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>DateTime</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDueDate" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDueDate">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetDueDate</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+27
+28
+29
+30
+31
+32</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 27</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_due_date'>get_due_date</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_due_date</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:date_time</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_gross_amount-instance_method">
+  
+    - (<tt>BigDecimal</tt>) <strong>get_gross_amount</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the total gross amount for all lines of the invoice (in the currency
+of the invoice). Parameters: invoiceHandle: Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>BigDecimal</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetGrossAmount" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetGrossAmount">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetGrossAmount</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+115
+116
+117
+118
+119
+120</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 115</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_gross_amount'>get_gross_amount</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_gross_amount</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:decimal</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_heading-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_heading</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the heading of the invoice. Parameters: invoiceHandle: Handle for the
+invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetHeading" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetHeading">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetHeading</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+38
+39
+40
+41
+42
+43</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 38</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_heading'>get_heading</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_heading</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_is_vat_included-instance_method">
+  
+    - (<tt>true</tt>, <tt>false</tt>) <strong>get_is_vat_included</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets whether the invoice has VAT included. Parameters: invoiceHandle:
+Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>true</tt>, <tt>false</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetIsVatIncluded" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetIsVatIncluded">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetIsVatIncluded</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+530
+531
+532
+533
+534
+535</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 530</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_is_vat_included'>get_is_vat_included</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_is_vat_included</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:boolean</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_layout-instance_method">
+  
+    - (<tt><span class='object_link'><a href="TemplateCollectionHandle.html" title="Economic::TemplateCollectionHandle (class)">TemplateCollectionHandle</a></span></tt>) <strong>get_layout</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets a handle for the layout of the invoice. Parameters: invoiceHandle:
+Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="TemplateCollectionHandle.html" title="Economic::TemplateCollectionHandle (class)">TemplateCollectionHandle</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetLayout" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetLayout">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetLayout</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+541
+542
+543
+544
+545
+546</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 541</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_layout'>get_layout</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_layout</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:template_collection_handle</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_lines-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="InvoiceLineHandle.html" title="Economic::InvoiceLineHandle (class)">InvoiceLineHandle</a></span>&gt;</tt>) <strong>get_lines</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets handles for the lines of the invoice. Parameters: invoiceHandle:
+Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="InvoiceLineHandle.html" title="Economic::InvoiceLineHandle (class)">InvoiceLineHandle</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetLines" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetLines">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetLines</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+298
+299
+300
+301
+302
+303</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 298</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_lines'>get_lines</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_lines</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:invoice_line_handle</span><span class='comma'>,</span> <span class='label'>array:</span> <span class='kw'>true</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_net_amount-instance_method">
+  
+    - (<tt>BigDecimal</tt>) <strong>get_net_amount</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the total amount for all lines without VAT of the invoice (in the
+currency of the invoice). Parameters: invoiceHandle: Handle for the
+invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>BigDecimal</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetNetAmount" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetNetAmount">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetNetAmount</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+93
+94
+95
+96
+97
+98</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 93</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_net_amount'>get_net_amount</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_net_amount</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:decimal</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_net_amount_default_currency-instance_method">
+  
+    - (<tt>BigDecimal</tt>) <strong>get_net_amount_default_currency</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>BigDecimal</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetNetAmountDefaultCurrency" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetNetAmountDefaultCurrency">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetNetAmountDefaultCurrency</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+179
+180
+181
+182
+183
+184</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 179</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_net_amount_default_currency'>get_net_amount_default_currency</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_net_amount_default_currency</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:decimal</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_number-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>get_number</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the number of an invoice. Parameters: invoiceHandle: Handle for the
+invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetNumber" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetNumber">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetNumber</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+354
+355
+356
+357
+358
+359</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 354</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_number'>get_number</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_number</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:int</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_oio_xml-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_oio_xml</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets an OIO XML string representing an invoice. Parameters: invoiceHandle:
+Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOioXml" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOioXml">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOioXml</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+320
+321
+322
+323
+324
+325</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 320</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_oio_xml'>get_oio_xml</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_oio_xml</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_order_number-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>get_order_number</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the order number of the invoice. Parameters: invoiceHandle: Handle for
+the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOrderNumber" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOrderNumber">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOrderNumber</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+82
+83
+84
+85
+86
+87</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 82</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_order_number'>get_order_number</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_order_number</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:int</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_other_reference-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_other_reference</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the other reference of the invoice. Parameters: invoiceHandle: Handle
+for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOtherReference" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOtherReference">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOtherReference</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+71
+72
+73
+74
+75
+76</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 71</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_other_reference'>get_other_reference</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_other_reference</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_our_reference-instance_method">
+  
+    - (<tt><span class='object_link'><a href="EmployeeHandle.html" title="Economic::EmployeeHandle (class)">EmployeeHandle</a></span></tt>) <strong>get_our_reference</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets a handle for the primary reference of the creditor of an invoice.
+Parameters: invoiceHandle: Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="EmployeeHandle.html" title="Economic::EmployeeHandle (class)">EmployeeHandle</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOurReference" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOurReference">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOurReference</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+486
+487
+488
+489
+490
+491</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 486</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_our_reference'>get_our_reference</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_our_reference</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:employee_handle</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_our_reference2-instance_method">
+  
+    - (<tt><span class='object_link'><a href="EmployeeHandle.html" title="Economic::EmployeeHandle (class)">EmployeeHandle</a></span></tt>) <strong>get_our_reference2</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets a handle for the secodary reference of the creditor of an invoice.
+Parameters: invoiceHandle: Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="EmployeeHandle.html" title="Economic::EmployeeHandle (class)">EmployeeHandle</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOurReference2" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOurReference2">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetOurReference2</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+497
+498
+499
+500
+501
+502</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 497</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_our_reference2'>get_our_reference2</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_our_reference2</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:employee_handle</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_pdf-instance_method">
+  
+    - (<tt>base64Binary</tt>) <strong>get_pdf</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets an invoice as a PDF-file. Parameters: invoiceHandle: Handle for the
+invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>base64Binary</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetPdf" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetPdf">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetPdf</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+309
+310
+311
+312
+313
+314</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 309</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_pdf'>get_pdf</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_pdf</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:base64_binary</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_project-instance_method">
+  
+    - (<tt><span class='object_link'><a href="ProjectHandle.html" title="Economic::ProjectHandle (class)">ProjectHandle</a></span></tt>) <strong>get_project</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets a handle for the project for an invoice. Parameters: invoiceHandle:
+Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ProjectHandle.html" title="Economic::ProjectHandle (class)">ProjectHandle</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetProject" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetProject">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetProject</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+376
+377
+378
+379
+380
+381</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 376</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_project'>get_project</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_project</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:project_handle</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_public_entry_number-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_public_entry_number</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the public entry number an invoice. Parameters: invoiceHandle: Handle
+for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetPublicEntryNumber" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetPublicEntryNumber">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetPublicEntryNumber</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+453
+454
+455
+456
+457
+458</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 453</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_public_entry_number'>get_public_entry_number</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_public_entry_number</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_remainder-instance_method">
+  
+    - (<tt>BigDecimal</tt>) <strong>get_remainder</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the remainder of the invoice (in the currency of the invoice).
+Parameters: invoiceHandle: Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>BigDecimal</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetRemainder" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetRemainder">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetRemainder</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+126
+127
+128
+129
+130
+131</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 126</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_remainder'>get_remainder</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_remainder</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:decimal</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_remainder_default_currency-instance_method">
+  
+    - (<tt>BigDecimal</tt>) <strong>get_remainder_default_currency</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the remainder of the invoice (in the default currency). Parameters:
+invoiceHandle: Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>BigDecimal</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetRemainderDefaultCurrency" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetRemainderDefaultCurrency">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetRemainderDefaultCurrency</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+137
+138
+139
+140
+141
+142</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 137</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_remainder_default_currency'>get_remainder_default_currency</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_remainder_default_currency</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:decimal</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_rounding_amount-instance_method">
+  
+    - (<tt>BigDecimal</tt>) <strong>get_rounding_amount</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the rounding amount for all lines of the invoice (in the currency of
+the invoice). Parameters: invoiceHandle: Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>BigDecimal</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetRoundingAmount" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetRoundingAmount">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetRoundingAmount</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+148
+149
+150
+151
+152
+153</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 148</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_rounding_amount'>get_rounding_amount</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_rounding_amount</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:decimal</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_term_of_payment-instance_method">
+  
+    - (<tt><span class='object_link'><a href="TermOfPaymentHandle.html" title="Economic::TermOfPaymentHandle (class)">TermOfPaymentHandle</a></span></tt>) <strong>get_term_of_payment</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets a handle for the term of payment of an invoice. Parameters:
+invoiceHandle: Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="TermOfPaymentHandle.html" title="Economic::TermOfPaymentHandle (class)">TermOfPaymentHandle</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetTermOfPayment" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetTermOfPayment">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetTermOfPayment</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+508
+509
+510
+511
+512
+513</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 508</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_term_of_payment'>get_term_of_payment</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_term_of_payment</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:term_of_payment_handle</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_terms_of_delivery-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_terms_of_delivery</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the terms of delivery of the invoice. Parameters: invoiceHandle:
+Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetTermsOfDelivery" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetTermsOfDelivery">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetTermsOfDelivery</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+607
+608
+609
+610
+611
+612</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 607</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_terms_of_delivery'>get_terms_of_delivery</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_terms_of_delivery</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_text_line1-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_text_line1</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the primary line of text of the invoice. Parameters: invoiceHandle:
+Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetTextLine1" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetTextLine1">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetTextLine1</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+49
+50
+51
+52
+53
+54</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 49</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_text_line1'>get_text_line1</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_text_line1</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_text_line2-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_text_line2</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the secondary line of text of the invoice. Parameters: invoiceHandle:
+Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetTextLine2" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetTextLine2">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetTextLine2</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+60
+61
+62
+63
+64
+65</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 60</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_text_line2'>get_text_line2</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_text_line2</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:string</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_vat_amount-instance_method">
+  
+    - (<tt>BigDecimal</tt>) <strong>get_vat_amount</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the total VAT amount for all lines of the invoice (in the currency of
+the invoice). Parameters: invoiceHandle: Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>BigDecimal</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetVatAmount" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetVatAmount">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetVatAmount</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+104
+105
+106
+107
+108
+109</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 104</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_vat_amount'>get_vat_amount</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_vat_amount</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:decimal</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_your_reference-instance_method">
+  
+    - (<tt><span class='object_link'><a href="DebtorContactHandle.html" title="Economic::DebtorContactHandle (class)">DebtorContactHandle</a></span></tt>) <strong>get_your_reference</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets a handle for the reference of the debtor of an invoice. Parameters:
+invoiceHandle: Handle for the invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="DebtorContactHandle.html" title="Economic::DebtorContactHandle (class)">DebtorContactHandle</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetYourReference" target="_parent" title="https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetYourReference">https://api.e-conomic.com/secure/api1/EconomicWebService.asmx?op=Invoice_GetYourReference</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+475
+476
+477
+478
+479
+480</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'handles/invoice_handle.rb', line 475</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_your_reference'>get_your_reference</span>
+  <span class='const'>Economic</span><span class='period'>.</span><span class='id identifier rubyid_api_method'>api_method</span><span class='lparen'>(</span><span class='symbol'>:invoice_get_your_reference</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_param'>param</span> <span class='symbol'>:invoice_handle</span><span class='comma'>,</span> <span class='kw'>self</span><span class='comma'>,</span> <span class='label'>type:</span> <span class='symbol'>:invoice_handle</span>
+    <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_return'>return</span> <span class='symbol'>:debtor_contact_handle</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Fri Jan 23 13:35:56 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.3).
+</div>
+
+  </body>
+</html>

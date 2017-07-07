@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.9.9
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "README";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="file_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'>
+<h1 id="label-Economic">Economic</h1>
+
+<p>Wrapper for e-conomic&#39;s SOAP API. See <a
+href="https://www.e-conomic.com/developer">www.e-conomic.com/developer</a>
+for general information.</p>
+
+<h2 id="label-Installation">Installation</h2>
+
+<p>Add this line to your application&#39;s Gemfile:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>economic</span><span class='tstring_end'>&#39;</span></span>
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre class="code ruby"><code class="ruby">$ bundle</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre class="code ruby"><code class="ruby">$ gem install economic</code></pre>
+
+<h2 id="label-Usage">Usage</h2>
+
+<h3 id="label-Connecting">Connecting</h3>
+
+<p>Use <code>Economic.connect</code> to set up a new connection:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='period'>.</span><span class='id identifier rubyid_connect'><span class='object_link'><a href="Economic.html#connect-class_method" title="Economic.connect (method)">connect</a></span></span><span class='lparen'>(</span><span class='symbol'>:connect_with_token</span><span class='comma'>,</span> <span class='label'>token:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>...</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>api_token:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>...</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='comment'># ...
+</span><span class='kw'>end</span>
+</code></pre>
+
+<p>The connection is closed automatically when using the block form. Without a
+block, you have to call <code>Economic.disconnect</code> to close the
+connection.</p>
+
+<h3 id="label-Handle+and+data+objects">Handle and data objects</h3>
+
+<p>Like e-conomic&#39;s API, we differentiate between <em>handle</em> and
+<em>data</em> objects. Handle objects are references to e-conomic records,
+consisting of an identifier (usually an ID or a number) and several method
+for interacting with the SOAP API. Data objects are containers for multiple
+attributes, e.g. the records&#39;s fields and / or calucated values
+provided by the API.</p>
+
+<p>All handle and data classes were generated automatically from the WSDL
+definition.</p>
+
+<p>Handle and data objects often come in pairs, i.e. you can access the
+current <em>Company</em> record by either <code>CompanyHandle</code> or
+<code>CompanyData</code>. The data object can be retrieved using the
+handle&#39;s <code>get_data</code> method:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_handle'>handle</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/CompanyHandle.html" title="Economic::CompanyHandle (class)">CompanyHandle</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Economic/CompanyHandle.html#get-class_method" title="Economic::CompanyHandle.get (method)">get</a></span></span>
+<span class='comment'>#=&gt; #&lt;CompanyHandle number:&quot;1234567&quot;&gt;
+</span>
+<span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='id identifier rubyid_handle'>handle</span><span class='period'>.</span><span class='id identifier rubyid_get_data'>get_data</span>
+<span class='comment'>#=&gt; #&lt;CompanyData handle:#&lt;CompanyHandle number:&quot;1234567&quot;&gt;
+</span><span class='comment'>#                 number:&quot;1234567&quot;
+</span><span class='comment'>#                 base_currency_handle:#&lt;CurrencyHandle code:&quot;GBP&quot;&gt;
+</span><span class='comment'>#                 name:&quot;foo&quot;
+</span><span class='comment'>#                 ...&gt;
+</span></code></pre>
+
+<h3 id="label-Fetching+record+fields">Fetching record fields</h3>
+
+<p>You can retrieve individual record fields using the handle&#39;s
+<code>get_&lt;field&gt;</code> methods:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_handle'>handle</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/CompanyHandle.html" title="Economic::CompanyHandle (class)">CompanyHandle</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Economic/CompanyHandle.html#get-class_method" title="Economic::CompanyHandle.get (method)">get</a></span></span>
+<span class='id identifier rubyid_handle'>handle</span><span class='period'>.</span><span class='id identifier rubyid_get_name'>get_name</span>
+<span class='comment'>#=&gt; &quot;foo&quot;
+</span></code></pre>
+
+<p>Or you can retrieve all record fields at once via the handle&#39;s data
+object. The fields are mapped to the data object&#39;s attributes:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_handle'>handle</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/CompanyHandle.html" title="Economic::CompanyHandle (class)">CompanyHandle</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Economic/CompanyHandle.html#get-class_method" title="Economic::CompanyHandle.get (method)">get</a></span></span>
+<span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='id identifier rubyid_handle'>handle</span><span class='period'>.</span><span class='id identifier rubyid_get_data'>get_data</span>
+<span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span>
+<span class='comment'>#=&gt; &quot;foo&quot;
+</span></code></pre>
+
+<p>Note that each <code>get_&lt;field&gt;</code> call results in an API call,
+whereas <code>get_data</code> fetches all fields in a single API call.</p>
+
+<h3 id="label-Updating+fields">Updating fields</h3>
+
+<p>Either use the handle&#39;s <code>set_&lt;field&gt;</code> methods:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_handle'>handle</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/CompanyHandle.html" title="Economic::CompanyHandle (class)">CompanyHandle</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Economic/CompanyHandle.html#get-class_method" title="Economic::CompanyHandle.get (method)">get</a></span></span>
+<span class='id identifier rubyid_handle'>handle</span><span class='period'>.</span><span class='id identifier rubyid_set_name'>set_name</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bar</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+</code></pre>
+
+<p>Or update all fields via the handle&#39;s data object:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_handle'>handle</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/CompanyHandle.html" title="Economic::CompanyHandle (class)">CompanyHandle</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Economic/CompanyHandle.html#get-class_method" title="Economic::CompanyHandle.get (method)">get</a></span></span>
+<span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='id identifier rubyid_handle'>handle</span><span class='period'>.</span><span class='id identifier rubyid_get_data'>get_data</span>
+<span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bar</span><span class='tstring_end'>&quot;</span></span>
+<span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='period'>.</span><span class='const'>CompanyHandle</span><span class='period'>.</span><span class='id identifier rubyid_update_from_data'>update_from_data</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+</code></pre>
+
+<p>Some fields might be read-only. In this case, the handle&#39;s
+<code>set_&lt;field&gt;</code> method is not defined.</p>
+
+<h3 id="label-Creating+new+records">Creating new records</h3>
+
+<p>New records are created using one of the handle&#39;s <code>create</code>
+methods, e.g.:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/DebtorHandle.html" title="Economic::DebtorHandle (class)">DebtorHandle</a></span></span><span class='period'>.</span><span class='id identifier rubyid_create'><span class='object_link'><a href="Economic/DebtorHandle.html#create-class_method" title="Economic::DebtorHandle.create (method)">create</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_number'>number</span><span class='comma'>,</span> <span class='id identifier rubyid_debtor_group_handle'>debtor_group_handle</span><span class='comma'>,</span> <span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_vat_zone'>vat_zone</span><span class='rparen'>)</span>
+</code></pre>
+
+<p>Or via a data object using <code>create_from_data</code>, e.g.:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/DebtorHandle.html" title="Economic::DebtorHandle (class)">DebtorHandle</a></span></span><span class='period'>.</span><span class='id identifier rubyid_create_from_data'><span class='object_link'><a href="Economic/DebtorHandle.html#create_from_data-class_method" title="Economic::DebtorHandle.create_from_data (method)">create_from_data</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span> <span class='comment'># data is a Economic::DebtorData instance
+</span></code></pre>
+
+<p>A <code>create_from_data_array</code> method lets you create multiple
+records at once, e.g.:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/DebtorHandle.html" title="Economic::DebtorHandle (class)">DebtorHandle</a></span></span><span class='period'>.</span><span class='id identifier rubyid_create_from_data_array'><span class='object_link'><a href="Economic/DebtorHandle.html#create_from_data_array-class_method" title="Economic::DebtorHandle.create_from_data_array (method)">create_from_data_array</a></span></span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='id identifier rubyid_d1'>d1</span><span class='comma'>,</span> <span class='id identifier rubyid_d2'>d2</span><span class='comma'>,</span> <span class='id identifier rubyid_d3'>d3</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='comment'># d1, d2 and d3 are Economic::DebtorData instances
+</span></code></pre>
+
+<h3 id="label-Working+with+attributes">Working with attributes</h3>
+
+<p>Handle and data attributes are exposed using Ruby&#39;s default getters and
+setters, e.g.:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/DebtorData.html" title="Economic::DebtorData (class)">DebtorData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Economic/Attributes/InstanceMethods.html#initialize-instance_method" title="Economic::Attributes::InstanceMethods#initialize (method)">new</a></span></span>
+<span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='comment'>#=&gt; nil
+</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>foo</span><span class='tstring_end'>&quot;</span></span>
+<span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='comment'>#=&gt; &quot;foo&quot;
+</span></code></pre>
+
+<p>You can pass attributes as a hash when creating a handle or a data
+instance:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/DebtorData.html" title="Economic::DebtorData (class)">DebtorData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Economic/Attributes/InstanceMethods.html#initialize-instance_method" title="Economic::Attributes::InstanceMethods#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>name:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>foo</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>city:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>foo town</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='comment'>#=&gt; &quot;foo&quot;
+</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_city'>city</span> <span class='comment'>#=&gt; &quot;foo town&quot;
+</span></code></pre>
+
+<p>Or update multiple attributes at once using <code>attributes=</code>:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/DebtorData.html" title="Economic::DebtorData (class)">DebtorData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Economic/Attributes/InstanceMethods.html#initialize-instance_method" title="Economic::Attributes::InstanceMethods#initialize (method)">new</a></span></span>
+<span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_attributes'>attributes</span> <span class='op'>=</span> <span class='lbrace'>{</span> <span class='label'>name:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>foo</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>city:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>foo town</span><span class='tstring_end'>&quot;</span></span> <span class='rbrace'>}</span>
+<span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='comment'>#=&gt; &quot;foo&quot;
+</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_city'>city</span> <span class='comment'>#=&gt; &quot;foo town&quot;
+</span></code></pre>
+
+<h3 id="label-Strict+types+and+typecasting">Strict types and typecasting</h3>
+
+<p>To avoid SOAP errors, types and values are checked and converted when
+assigning new values using the appropriate converter. Usually multiple
+types are accepted:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/DebtorData.html" title="Economic::DebtorData (class)">DebtorData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Economic/Attributes/InstanceMethods.html#initialize-instance_method" title="Economic::Attributes::InstanceMethods#initialize (method)">new</a></span></span>
+<span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_is_accessible'>is_accessible</span> <span class='op'>=</span> <span class='kw'>true</span>    <span class='comment'># works
+</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_is_accessible'>is_accessible</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>true</span><span class='tstring_end'>&#39;</span></span>  <span class='comment'># works
+</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_is_accessible'>is_accessible</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>foo</span><span class='tstring_end'>&#39;</span></span>   <span class='comment'># raises TypeError
+</span>
+<span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_credit_maximum'>credit_maximum</span> <span class='op'>=</span> <span class='const'>BigDecimal</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>120.50</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='comment'># works
+</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_is_accessible'>is_accessible</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>120.50</span><span class='tstring_end'>&#39;</span></span>              <span class='comment'># works
+</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_is_accessible'>is_accessible</span> <span class='op'>=</span> <span class='float'>120.5</span>                 <span class='comment'># works, but may print a warning regarding floating point precision
+</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_is_accessible'>is_accessible</span> <span class='op'>=</span> <span class='symbol'>:foo</span>                  <span class='comment'># raises TypeError
+</span></code></pre>
+
+<p>Some converters are restricted to specific values, e.g.
+<code>Economic::VatZoneConverter</code> only accepts
+<code>&quot;HomeCountry&quot;</code>, <code>&quot;EU&quot;</code> and
+<code>&quot;Abroad&quot;</code>:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/DebtorData.html" title="Economic::DebtorData (class)">DebtorData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Economic/Attributes/InstanceMethods.html#initialize-instance_method" title="Economic::Attributes::InstanceMethods#initialize (method)">new</a></span></span>
+<span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_vat_zone'>vat_zone</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>HomeCountry</span><span class='tstring_end'>&quot;</span></span>      <span class='comment'># works
+</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_vat_zone'>vat_zone</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>EU</span><span class='tstring_end'>&quot;</span></span>               <span class='comment'># works
+</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_vat_zone'>vat_zone</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Abroad</span><span class='tstring_end'>&quot;</span></span>           <span class='comment'># works
+</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_vat_zone'>vat_zone</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>any other string</span><span class='tstring_end'>&quot;</span></span> <span class='comment'># raises TypeError
+</span></code></pre>
+
+<p>Handle attributes accept either a proper handle instance or a hash:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/DebtorData.html" title="Economic::DebtorData (class)">DebtorData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Economic/Attributes/InstanceMethods.html#initialize-instance_method" title="Economic::Attributes::InstanceMethods#initialize (method)">new</a></span></span>
+<span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_debtor_group_handle'>debtor_group_handle</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/DebtorGroupHandle.html" title="Economic::DebtorGroupHandle (class)">DebtorGroupHandle</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Economic/Attributes/InstanceMethods.html#initialize-instance_method" title="Economic::Attributes::InstanceMethods#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>number:</span> <span class='int'>1</span><span class='rparen'>)</span> <span class='comment'># works
+</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_debtor_group_handle'>debtor_group_handle</span> <span class='op'>=</span> <span class='lbrace'>{</span> <span class='label'>number:</span> <span class='int'>1</span> <span class='rbrace'>}</span>                              <span class='comment'># works
+</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_debtor_group_handle'>debtor_group_handle</span> <span class='op'>=</span> <span class='lbrace'>{</span> <span class='label'>foo:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>bar</span><span class='tstring_end'>&#39;</span></span> <span class='rbrace'>}</span>                             <span class='comment'># raises TypeError
+</span></code></pre>
+
+<h3 id="label-Field+limits">Field limits</h3>
+
+<p>Field limits are not checked and exceeding these limits may result in an
+error message or in values being truncated. Attributes of type
+<code>:string</code> have a maximum length, <code>:int</code> attributes
+have a minimum and maximum value and <code>:decimal</code> has a fixed
+precision / scale:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_debtor_handle'>debtor_handle</span><span class='period'>.</span><span class='id identifier rubyid_set_credit_maximum'>set_credit_maximum</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>100.1234</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='id identifier rubyid_debtor_handle'>debtor_handle</span><span class='period'>.</span><span class='id identifier rubyid_get_credit_maximum'>get_credit_maximum</span>  <span class='comment'># #&lt;BigDecimal 100.12&gt;
+</span>
+<span class='id identifier rubyid_debtor_handle'>debtor_handle</span><span class='period'>.</span><span class='id identifier rubyid_set_name'>set_name</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>x</span><span class='tstring_end'>&#39;</span></span> <span class='op'>*</span> <span class='int'>255</span><span class='rparen'>)</span> <span class='comment'># works
+</span><span class='id identifier rubyid_debtor_handle'>debtor_handle</span><span class='period'>.</span><span class='id identifier rubyid_set_name'>set_name</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>x</span><span class='tstring_end'>&#39;</span></span> <span class='op'>*</span> <span class='int'>256</span><span class='rparen'>)</span> <span class='comment'># raises Economic::ValidationException: String value exceeds maximum length.
+</span>
+<span class='id identifier rubyid_debtor_handle'>debtor_handle</span><span class='period'>.</span><span class='id identifier rubyid_set_city'>set_city</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>x</span><span class='tstring_end'>&#39;</span></span> <span class='op'>*</span> <span class='int'>50</span><span class='rparen'>)</span>  <span class='comment'># works
+</span><span class='id identifier rubyid_debtor_handle'>debtor_handle</span><span class='period'>.</span><span class='id identifier rubyid_set_city'>set_city</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>x</span><span class='tstring_end'>&#39;</span></span> <span class='op'>*</span> <span class='int'>51</span><span class='rparen'>)</span>  <span class='comment'># raises Economic::ValidationException: String value exceeds maximum length.
+</span></code></pre>
+
+<p>Attribute types are not always consistent, e.g. the Debtor&#39;s
+<code>number</code> field is defined as <code>string</code>, although the
+API only accepts integer values:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/DebtorHandle.html" title="Economic::DebtorHandle (class)">DebtorHandle</a></span></span><span class='period'>.</span><span class='id identifier rubyid_create'><span class='object_link'><a href="Economic/DebtorHandle.html#create-class_method" title="Economic::DebtorHandle.create (method)">create</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>123</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>number:</span> <span class='int'>1</span> <span class='rbrace'>}</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>name</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>EU</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='comment'># works
+</span><span class='const'><span class='object_link'><a href="Economic.html" title="Economic (module)">Economic</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Economic/DebtorHandle.html" title="Economic::DebtorHandle (class)">DebtorHandle</a></span></span><span class='period'>.</span><span class='id identifier rubyid_create'><span class='object_link'><a href="Economic/DebtorHandle.html#create-class_method" title="Economic::DebtorHandle.create (method)">create</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>foo</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>number:</span> <span class='int'>1</span> <span class='rbrace'>}</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>name</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>EU</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='comment'># raises Economic::ValidationException: Debtor number string must be a legal integer.
+</span></code></pre>
+
+<p>There might be even undocumented validations:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_debtor_handle'>debtor_handle</span><span class='period'>.</span><span class='id identifier rubyid_set_ean'>set_ean</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>5901234123457</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>  <span class='comment'># works
+</span><span class='id identifier rubyid_debtor_handle'>debtor_handle</span><span class='period'>.</span><span class='id identifier rubyid_set_ean'>set_ean</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>123</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>            <span class='comment'># raises Economic::ValidationException: The European Article Number is invalid.
+</span></code></pre>
+
+<h2 id="label-Tests">Tests</h2>
+
+<p>For unit tests run:</p>
+
+<pre class="code ruby"><code class="ruby">$ rspec spec/lib</code></pre>
+
+<p>For integration tests run:</p>
+
+<pre class="code ruby"><code class="ruby">$ rspec spec/features</code></pre>
+
+<p>You have to provide valid credentials in the project&#39;s
+<code>.env</code> file.</p>
+
+<h2 id="label-Contributing">Contributing</h2>
+<ol><li>
+<p>Fork it ( <a
+href="https://github.com/bonayou/economic/fork">github.com/bonayou/economic/fork</a>
+)</p>
+</li><li>
+<p>Create your feature branch (<code>git checkout -b my-new-feature</code>)</p>
+</li><li>
+<p>Commit your changes (<code>git commit -am &#39;Add some
+feature&#39;</code>)</p>
+</li><li>
+<p>Push to the branch (<code>git push origin my-new-feature</code>)</p>
+</li><li>
+<p>Create a new Pull Request</p>
+</li></ol>
+</div></div>
+
+      <div id="footer">
+  Generated on Fri Jul  7 11:03:59 2017 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.9 (ruby-2.3.3).
+</div>
+
+    </div>
+  </body>
+</html>
